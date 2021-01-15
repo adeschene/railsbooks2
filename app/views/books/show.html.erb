@@ -7,12 +7,12 @@
 
 <p>
   <strong>Year:</strong>
-  <%= @book.year %>
+  <%= @book.published_year %>
 </p>
 
 <p>
   <strong>Author:</strong>
-  <%= @book.author %>
+  <%= @book.author.name %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |

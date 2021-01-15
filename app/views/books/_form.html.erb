@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :year %>
-    <%= form.number_field :year %>
+    <%= form.label :published_year %>
+    <%= form.number_field :published_year %>
   </div>
 
   <div class="field">
     <%= form.label :author %>
-    <%= form.text_field :author %>
+    <%= collection_select :book, :author_id, Author.all, :id, :name, prompt:true %>
   </div>
 
   <div class="actions">
