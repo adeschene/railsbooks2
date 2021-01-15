@@ -1,5 +1,5 @@
 # README
 
-First Ruby on Rails Bootcamp assignment.
+Second Ruby on Rails Bootcamp assignment.
 
-Uses a small amount of bootstrap for table readability.
+Uses a navbar and a small amount of bootstrap for table readability and ease of navigation.
