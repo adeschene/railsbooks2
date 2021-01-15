@@ -10,14 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_13_224005) do
+ActiveRecord::Schema.define(version: 2021_01_15_182132) do
+
+  create_table "authors", force: :cascade do |t|
+    t.string "name"
+    t.integer "birth_year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "books", force: :cascade do |t|
     t.string "title"
-    t.integer "year"
-    t.string "author"
+    t.integer "published_year"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "author_id"
   end
 
 end
